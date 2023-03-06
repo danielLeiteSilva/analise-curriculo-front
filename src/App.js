@@ -40,20 +40,15 @@ function App() {
   return (
     <div className="App">
       <Load loading={loading} />
-      <header>
-        <h1>Análise de Currículo</h1>
-      </header>
-      <article>
+      <aside>
         <section>
           <section className="area">
             <h2>Vaga</h2>
-            <h3>Digite ou cole a descrição da vaga</h3>
-            <textarea onChange={getVaga}></textarea>
+            <textarea onChange={getVaga} placeholder="Digite ou cole a descrição da vaga"></textarea>
           </section>
           <section className="area">
             <h2>Currículo</h2>
-            <h3>Digite ou cole a descrição do currículo</h3>
-            <textarea onChange={getCurriculo}></textarea>
+            <textarea onChange={getCurriculo} placeholder="Digite ou cole a descrição do currículo"></textarea>
           </section>
         </section>
         <section className="button">
@@ -68,10 +63,17 @@ function App() {
             {information?.message?.description}
           </div>
           <div className="score">
-          {`${information?.message?.score * 100 != NaN ? information?.message?.score * 100 : "0"}%`}
+            {`${information?.message?.score ? information?.message?.score * 100 : "0"}%`}
           </div>
         </section>
-      </article>
+      </aside>
+      <nav>
+        <ul>
+          <li>Análise currículo</li>
+          <li>Análise seu currículo por pdf</li>
+          <li>Search currículum for vaga</li>
+        </ul>
+      </nav>
       <footer></footer>
     </div>
   );

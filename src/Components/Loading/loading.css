@@ -1,9 +1,9 @@
 .load {
     width: 100%;
-    min-height: calc(1080px + 80px);
+    min-height: calc(950px);
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;

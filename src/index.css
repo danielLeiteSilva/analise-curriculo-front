@@ -1,18 +1,22 @@
-header {
-  width: 100%;
-  height: 80px;
-  background-color: brown;
+.App{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: -1.5px;
-  color: #fff;
+  flex-direction: row-reverse;
 }
 
-article {
-  width: 100%;
-  min-height: 1080px;
+h2, h3{
+  color: #7c7c7c;
+}
+
+aside {
+  width: 85%;
+  min-height: 935px;
   background-color: aliceblue;
+}
+
+nav {
+  width: 15%;
+  min-height: 935px;
+  background-color: rgb(174, 99, 243);
 }
 
 section {
@@ -31,8 +35,9 @@ section {
 
 
 textarea{
-  width: 800px;
+  width: 600px;
   height: 350px;
+  font-size: 12pt;
   overflow: scroll;
   scrollbar-width: thin;
   padding: 20px;
@@ -40,7 +45,7 @@ textarea{
   border-radius: 10px;
   border: none;
   outline: none;
-  box-shadow: 0px 0px 5px 1px #bebebe;
+  box-shadow: 2px 2px 5px 1px #bebebe;
 }
 
 .button{
@@ -51,19 +56,19 @@ button{
   width: calc(100% / 2);
   height: 50px;
   cursor: pointer;
-  background-color: brown;
+  background-color: rgb(174, 99, 243);
   color: #fff;
   border:none;
   outline: none;
   font-size: 15pt;
-  letter-spacing: -1px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 1px #bebebe;
+  box-shadow: 2px 2px 5px 1px #bebebe;
 }
 
 button:hover{
-  background-color: #000;
+  background-color: rgb(75, 0, 145);
   transition: 0.3s;
+  color: #fff;
 }
 
 button:active{
@@ -73,21 +78,25 @@ button:active{
 }
 
 .result{
-  width: 100%;
+  width: 80%;
   height: 150px;
   background-color: #fff;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px 1px #bebebe;
 }
 
 div{
   width: 100%;
   min-height: 150px;
-  background-color: #000;
   color: #fff;
 }
 
 .score{
   width: 250px;
-  background-color: darkgreen;
+  color: darkgreen;
+  font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +104,8 @@ div{
 
 .aprovacao{
   width: 350px;
-  background-color: darkgreen;
+  color: darkgreen;
+  font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,5 +113,32 @@ div{
 
 .description{
   padding: 10px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
+}
+
+ul{
+  width: 100%;
+  min-height: 100px;
+  margin-top: 200px;
+}
+
+li{
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(75, 0, 145);
+  margin-top: 5px;
+}
+
+li:hover{
+  background-color: rgb(33, 0, 65);
+  transition: 0.5s;
 }
