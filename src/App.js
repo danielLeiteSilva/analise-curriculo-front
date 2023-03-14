@@ -1,3 +1,5 @@
+import { Route, BrowserRouter, Routes } from 'react-router-dom'
+import ErrorBoundary from './Components/Error'
 //Styles
 import "./index.css"
 
@@ -6,10 +8,13 @@ import Main from './Components/Main'
 
 function App() {
   return (
-    <div className="App">
-      <Main />
-      <footer></footer>
-    </div>
+    <ErrorBoundary >
+      <BrowserRouter >
+        <Routes>
+          <Route exact path="/" element={<Main />}></Route>
+        </Routes>
+      </BrowserRouter >
+    </ErrorBoundary>
   );
 }
 

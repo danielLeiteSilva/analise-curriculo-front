@@ -42,7 +42,7 @@ function Main() {
     }
 
     return (
-        <>
+        <div className="App">
             <Load loading={loading} />
             <aside>
                 <section>
@@ -62,7 +62,8 @@ function Main() {
                 <Result information={information} />
             </aside>
             <Menu />
-        </>
+            <footer></footer>
+        </div>
     )
 
 }

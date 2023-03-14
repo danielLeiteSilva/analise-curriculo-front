@@ -1,12 +1,24 @@
+import { AiOutlineFileSearch, AiOutlineFilePdf, AiOutlineFileSync } from 'react-icons/ai'
+
+import "./style.css"
+import logo from './icon.png'
+
 function Menu() {
     return (
-        <nav>
-            <ul>
-                <li>Análise currículo</li>
-                <li>Análise seu currículo por pdf</li>
-                <li>Pesquisar currículo pela vaga</li>
-            </ul>
-        </nav>
+        <>
+            <nav>
+                <figure>
+                    <img src={logo}/>
+                </figure>
+                <ul>
+                    <li><AiOutlineFileSearch /> &nbsp; Análise</li>
+                    <li><AiOutlineFilePdf /> &nbsp; Análise PDF</li>
+                    <li><AiOutlineFileSync /> &nbsp; Pesquisar</li>
+                </ul>
+            </nav>
+
+        </>
+
     )
 }
 
