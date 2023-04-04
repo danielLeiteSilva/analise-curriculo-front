@@ -5,6 +5,7 @@ import "./index.css"
 
 //Components
 import Main from './Components/Main'
+import Search from './Components/Search'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter >
         <Routes>
           <Route exact path="/" element={<Main />}></Route>
+          <Route exact path="/search" element={<Search />}></Route>
         </Routes>
       </BrowserRouter >
     </ErrorBoundary>

@@ -5,28 +5,22 @@
 
 h2,
 h3 {
-    color: #000000;
+    color: #fff;
     letter-spacing: -1px;
     font-weight: 900;
-    color: #000;
 }
 
 aside {
     width: 85%;
     min-height: 937px;
-    background-color: aliceblue;
+    background-color: #343541;
 }
 
 nav {
     width: 15%;
     min-height: 937px;
-    background-color: rgb(190, 1, 143);
-    border-right: 3px;
-    border-left: 0px;
-    border-bottom: 0;
-    border-top: 0;
-    border-color: #000;
-    border-style: solid;
+    background-color: #202123;
+    border: none;
 }
 
 section {
@@ -55,6 +49,8 @@ textarea {
     border: none;
     outline: none;
     background-color: #3e3f4b;
+    box-shadow: 0px 0px 25px -10px #1a1a1a;
+    color: #fff;
 }
 
 .button {
@@ -71,10 +67,12 @@ button {
     font-size: 15pt;
     border-radius: 10px;
     font-weight: 900;
+    background-color: #15a27f;
+    box-shadow: 0px 0px 25px -10px #1a1a1a;
 }
 
 button:hover {
-    background-color: rgb(75, 0, 145);
+    background-color: #202123;
     transition: 0.3s;
     color: #fff;
 }
@@ -85,46 +83,3 @@ button:active {
     color: #000;
 }
 
-.result {
-    width: 80%;
-    height: 150px;
-    margin: 0 auto;
-    font-weight: 500;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #3e3f4b;
-    box-shadow: 0px 0px 25px -10px #1a1a1a;
-}
-
-div {
-    width: 100%;
-    min-height: 150px;
-    color: #fff;
-}
-
-.score {
-    width: 250px;
-    color: #fff;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.aprovacao {
-    width: 350px;
-    color: #fff;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.description {
-    padding: 10px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}

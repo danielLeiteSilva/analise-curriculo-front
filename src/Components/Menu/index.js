@@ -12,15 +12,14 @@ function Menu() {
                     <img src={logo} />
                 </figure>
                 <ul>
-                    <Link to="/analise" className='link'><li><AiOutlineFileSearch /> &nbsp; Análise</li></Link>
-                    <Link to="/pdf" className='link'><li><AiOutlineFilePdf /> &nbsp; Análise PDF</li></Link>
-                    <Link to="/search" className='link'><li><AiOutlineFileSync /> &nbsp; Pesquisar</li></Link>
+                    <Link to="/" className='link'><li><AiOutlineFileSearch /> &nbsp; Análise</li></Link>
                 </ul>
             </nav>
-
         </>
-
     )
 }
+
+//<Link to="/pdf" className='link'><li><AiOutlineFilePdf /> &nbsp; Análise PDF</li></Link>
+{/* <Link to="/search" className='link'><li><AiOutlineFileSync /> &nbsp; Pesquisar</li></Link> */}
 
 export default Menu;
