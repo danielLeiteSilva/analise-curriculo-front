@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const GptService = axios.create({
-  baseURL: process.env.API_URL
+  baseURL: 'https://api-curriculo-chatgpt.vercel.app'
 });
 
 export default GptService;
